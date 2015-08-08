@@ -1,0 +1,11 @@
+.head {
+	margin: 0 auto;
+
+}
+.head h1{
+	font-weight: bold;
+	font-size: 60px;
+}
+.head img {
+	opacity: 0.5;
+}
