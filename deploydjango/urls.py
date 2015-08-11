@@ -12,6 +12,14 @@ urlpatterns = patterns('',
     url(r'^deployapp/home/$', 'deployapp.views.home'),
     url(r'^admin/', include(admin.site.urls)),
 )
+
+
+# Custion 404 views and page
+handler404 = 'deploydjango.views.error404'
+# Custion 500 views and page
+handler500 = 'deploydjango.views.error500'
+
+
 if settings.DEBUG:
 	urlpatterns += static(settings.STATIC_URL, documment_root=settings.STATIC_ROOT)
 	urlpatterns += static(settings.MEDIA_URL, documment_root=settings.MEDIA_ROOT)
