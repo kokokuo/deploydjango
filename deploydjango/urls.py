@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', 'deploydjango.views.home'),
     url(r'^home/$', 'deploydjango.views.home'),
-    url(r'^deployapp/home/$', 'deployapp.views.home'),
+    url(r'^deployapp/hello/$', 'deployapp.views.hello'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^robots\.txt/$', TemplateView.as_view(template_name='robots.txt', content_type='text/plain')),
 )
